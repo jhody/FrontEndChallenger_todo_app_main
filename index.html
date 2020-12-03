@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body class="theme_dark">
+  <main>
+    <header>
+      <div class="title">
+        <h1 class="txtformat1">Todo</h1>
+        <figure title="Change theme">
+            <img class="btnChangeTheme" id="btnChangeTheme" src="images/icon-sun.svg">
+        </figure>
+      </div>
+      <div class="search bloque">
+        <figure class="opt_checkbox">
+          <img src="images/icon-check.svg">
+          <div></div>
+        </figure>
+        <input type="text" id="txtnewtask" placeholder="Create a new Todo, press Enter to add...">
+      </div>
+    </header>
+    <div class="list" id="lst_content">
+      <div class="list_item bloque">
+        <figure class="opt_checkbox">
+          <img src="images/icon-check.svg">
+        </figure>
+        <label class="txtformat2">
+          dsfdsfdf
+        </label>
+        <div class="list_item_btndelete txtformat3">
+          <img src="images/icon-cross.svg">
+        </div>
+      </div>
+      <div class="list_item bloque">
+        <figure class="opt_checkbox checked">
+          <img src="images/icon-check.svg">
+        </figure>
+        <label class="txtformat4">
+          dsfdsfdf
+        </label>
+        <div class="list_item_btndelete txtformat3">
+          <img src="images/icon-cross.svg">
+        </div>
+      </div>
+      <div class="list_item bloque complete">
+        <figure class="opt_checkbox checked">
+          <img src="images/icon-check.svg">
+        </figure>
+        <label class="txtformat3">
+          dsfdsfdf
+        </label>
+        <div class="list_item_btndelete txtformat3">
+          <img src="images/icon-cross.svg">
+        </div>
+      </div>
+    </div>
+    <div class="accionestemp bloque">
+      <label id="numberItems">
+        <!-- Add dynamic number --> items left
+      </label>
+      <label class="acction_clearcomp">
+        <a href="javascript:void(0);" class="btnclearCompleted">Clear Completed</a>
+      </label>
+    </div>
+    <div class="acciones bloque">
+      <label id="numberItems1">
+        <!-- Add dynamic number --> items left
+      </label>
+      <div>
+        <ul class="actions_simples">
+          <li><a class="active" data-filter="all" id="btnfilter_all" href="javascript:void(0);">All</a></li>
+          <li><a href="javascript:void(0);" data-filter="active" class="btnfilter_active">Active</a></li>
+          <li><a href="javascript:void(0);" data-filter="complete" class="btnfilter_complete">Completed</a></li>
+        </ul>
+      </div>
+      <label class="acction_clearcomp">
+        <a href="javascript:void(0);" class="btnclearCompleted">Clear Completed</a>
+      </label>
+    </div>
+  </main>
+  <footer class="txtformat2">
+    <div>
+      Drag and drop to reorder list
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/jhody" target="_blank">Yhody León</a>.
+    </div>
+  </footer>
+  
+  
+  <script src="./js/script.js" language="javascript" type="text/javascript"></script>
+</body>
+</html>
